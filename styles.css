@@ -1,0 +1,25 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    background-color:azure;
+}
+
+.main-container {
+    border:2px solid blue;
+    width:100vw;
+    height:100vh;
+    display:grid;
+    padding:5px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+}
+
+.sections {
+    border:2px solid red;
+
+}
