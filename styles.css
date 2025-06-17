@@ -13,23 +13,12 @@
     font-size:16px;
 }
 
-body {
-    background-color:azure;
-}
-
 .main-container {
-    border:0.2rem solid blue;
     width:100vw;
     height:100vh;
     display:grid;
-    padding:0.2rem;
     grid-template-columns:repeat(1, 1fr) repeat(1, 4fr);
     grid-template-rows:repeat(1, 1fr) repeat(1, 4fr);
-}
-
-.sections {
-    border:0.1rem solid red;
-
 }
 
 .navigation {
@@ -43,17 +32,13 @@ body {
     background-color: #1992d4;
     padding:0.2rem;
     color:white;
-    font-size:2.5rem;
+    font-size:1rem;
     font-weight:bolder;
 }
 
 .content-container {
     grid-area:2/2/3/3;
     background-color: #e2e8f0;
-}
-
-.side-sections {
-    border:0.2rem solid black;
 }
 
 .side-container {
@@ -80,4 +65,13 @@ body {
 
 .side-nav {
     grid-column:2/3;
+}
+
+.side-title, .side-header .icon {
+    font-size:1.5rem;
+    margin:0.3rem;
+}
+
+svg {
+    color:white;
 }
