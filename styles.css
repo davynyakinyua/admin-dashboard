@@ -32,7 +32,7 @@
     background-color: #1992d4;
     padding:0.2rem;
     color:white;
-    font-size:1rem;
+    font-size:0.7rem;
     font-weight:bolder;
 }
 
@@ -47,13 +47,14 @@
     grid-template-columns:1fr;
     grid-template-rows:repeat(1, 1fr) repeat(1, 6fr) repeat(1, 3fr);
     gap:1.3rem;
+    padding-left:0.3rem;
 }
 
 .side-header, .side-content, .side-bottom {
     display:grid;
     grid-template-columns:repeat(1, 1fr) repeat(1, 2fr);
     grid-template-rows:1fr;
-    margin:0.7rem;
+    margin:0.2rem;
     padding:0.5rem;
     width:70%
     
@@ -61,17 +62,24 @@
 
 .icon {
     grid-column:1/2;
+    width:40%;
+    height:auto;
 }
 
 .side-nav {
     grid-column:2/3;
 }
 
-.side-title, .side-header .icon {
-    font-size:1.5rem;
+.side-title {
     margin:0.3rem;
+    font-size:1.3rem;
 }
 
 svg {
     color:white;
+}
+
+.side-header .icon {
+    width:65%;
+    height:auto;
 }
