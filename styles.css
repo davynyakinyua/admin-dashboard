@@ -1,9 +1,11 @@
+/* self hosted roboto font family*/
 
 @font-face{
     font-family:roboto;
     src:url(font/Roboto-Regular.woff);
 }
 
+/* CSS reset for the all browsers*/
 
 * {
     margin:0;
@@ -13,6 +15,9 @@
     font-size:16px;
 }
 
+/* Declaration for main container of the body*/
+/*Grid container*/
+
 .main-container {
     width:100vw;
     height:100vh;
@@ -21,11 +26,17 @@
     grid-template-rows:repeat(1, 1fr) repeat(1, 4fr);
 }
 
+/* Declaration for the top part container of the page with the search box*/
+/*Grid item of main container*/
+
 .navigation {
     grid-column:2/3;
     grid-row:1/2;
     background-color: #ffffff;
 }
+
+/* Declarations for the left side panel*/
+/* Grid item of the main container*/
 
 .side-panel {
     grid-area:1/1/3/2;
@@ -36,11 +47,7 @@
     font-weight:bolder;
 }
 
-.content-container {
-    grid-area:2/2/3/3;
-    background-color: #e2e8f0;
-}
-
+/* Grid container for the left side panel*/
 .side-container {
     display:grid;
     height:60vh;
@@ -50,6 +57,8 @@
     padding-left:0.3rem;
 }
 
+/*Grid items of the side container above*/
+/* Grid containers for side header, side content, and side bottom content*/
 .side-header, .side-content, .side-bottom {
     display:grid;
     grid-template-columns:repeat(1, 1fr) repeat(1, 2fr);
@@ -75,27 +84,26 @@
     font-size:1.3rem;
 }
 
-svg {
-    color:white;
-}
-
 .side-header .icon {
     width:65%;
     height:auto;
+}
+
+
+/* CSS for the main content at the center and right of the page*/
+
+.content-container {
+    grid-area:2/2/3/3;
+    background-color: #e2e8f0;
 }
 
 .first-container {
     display:grid;
     grid-template-columns:repeat(2, 35%) repeat(1, 25%);
     grid-template-rows:repeat(1, 8%) repeat(1, 90%);
-    border:2px solid red;
     width:100%;
     height:100%;
     gap:0.5rem;
-}
-
-.content-title, .announcement, .center-container, .right-container {
-    border:2px solid blue;
 }
 
 .content-title {
@@ -104,10 +112,6 @@ svg {
 
 .announcement {
     grid-column:3/4;
-}
-
-.center-container {
-    grid-column:1/3;
 }
 
 .right-container {
@@ -122,6 +126,7 @@ svg {
 }
 
 .center-container {
+    grid-column:1/3;
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows:repeat(3, 1fr);
@@ -129,20 +134,11 @@ svg {
     gap:1rem;
 }
 
-.content-box {
-    border:2px solid black;
-
-}
-
 .right-container {
     display:grid;
     grid-template-rows:repeat(1, 45%) repeat(1, 5%) repeat(1, 40%);
     padding:0 0.4rem;
     gap:0.5rem;
-}
-
-.right-top, .right-center, .right-bottom {
-    border:2px solid purple;
 }
 
 .right-top {
@@ -160,12 +156,8 @@ svg {
     grid-row:3/4;
 }
 
-.right-icons, .right-text {
-    border:2px solid black;
-}
-
-.profile, .icons-3 {
-    border:2px solid blue;
+ .text-one, .text-two {
+    border-bottom:2px solid lightgray;
 }
 
 .right-top, .right-bottom, .right-icons {
@@ -173,7 +165,6 @@ svg {
     width:100%;
     height:100%;
     padding:0.3rem;
-    gap:0.5rem;
     background-color: white;
     border-radius: 6px;
 }
@@ -202,6 +193,59 @@ svg {
     grid-column:1/2;
 }
 
-.right-center {
-    
+.profile {
+    grid-column:2/3;
+}
+
+.right-text h3 {
+    font-size:0.7rem;
+}
+
+.right-text p {
+    font-size:0.7rem;
+    color:grey;
+    margin-top:0.2rem;
+}
+
+.right-text {
+    padding:0.6rem;
+}
+
+.profile h4 {
+    font-size:0.7rem;
+    margin:0.4rem;
+}
+
+.profile p {
+    font-size:0.7rem;
+}
+
+.content-box {
+    background-color:white;
+    border-left:0.5rem solid #f0b429;
+    border-radius:9px;
+    display:grid;
+    grid-template-rows:repeat(1, 2fr) repeat(1, 1fr);
+    padding:0.9rem;
+
+}
+
+.text p {
+    color:grey;
+    font-size:0.9rem;
+    grid-row:1/2;
+}
+
+.icons-2 {
+    grid-row:2/4;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    padding:0.4rem;
+    gap:1rem;
+}
+
+.icons-4 {
+    width:20px;
+    height:auto;
 }
