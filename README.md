@@ -17,3 +17,5 @@ intermediate HTML and CSS and look forward to continueing with JavaScript.
 # Feedback will be greatly appreciated
 
 # Link to the project
+
+https://davynyakinyua.github.io/admin-dashboard/
