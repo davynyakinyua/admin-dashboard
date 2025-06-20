@@ -287,6 +287,12 @@
     height:auto;
 }
 
+.rotate {
+    transform:rotate(-90deg);
+    width:7%;
+    height:auto;
+}
+
 /* container for the right panel inside the content container */
 .right-container {
     display:grid;
